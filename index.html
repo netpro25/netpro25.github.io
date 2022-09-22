@@ -2533,67 +2533,7 @@
                                         class="client-report-protected-system-details printable-page printable-page-A4-width">
                                         <div class="templated-module-container">
                                             <h1 class="module-header">Protected System Details</h1>
-                                            <div class="system">
-                                                <h2 class="title module-subheader">DESKTOP-ABCD1234</h2>
-
-                                                <div class="system-container">
-                                                    <div class="split-container system-details-section">
-                                                        <table class="table table-condensed system-details-table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <th>Last Successful Backup</th>
-                                                                    <td>
-                                                                        6/21/22, 3:01 AM</td>
-
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="split-container volume-protection-section">
-                                                        <h4 class="title">Volume Protection</h4>
-                                                        <table
-                                                            class="table table-condensed hero-report-striped-table volume-protection-table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="path-cell">Path</th>
-                                                                    <th>Used Space</th>
-                                                                    <th>Capacity</th>
-                                                                    <th>Attributes</th>
-                                                                    <th class="protected-icon-cell">
-                                                                        Protected
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="path-cell">C:\</td>
-                                                                    <td>221.12 GB</td>
-                                                                    <td>475.83 GB</td>
-                                                                    <td>NTFS</td>
-                                                                    <td class="protected-icon-cell">
-                                                                        <span
-                                                                            class="material-icons md-10 text-success protected-icon">done</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <th colspan="5">
-                                                                        <strong>
-                                                                            Total Used Space
-                                                                        </strong>
-                                                                        <span class="total-used-space">221.12 GB</span>
-                                                                    </th>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-
-                                                    </div>
-                                                </div>
-
-                                                <hr class="system-separator">
-                                            </div>
+                                            {{systemDetails}}
                                         </div>
                                     </section>
 
@@ -3964,6 +3904,8 @@
             </tr>
         </tbody>
     </table>
+
+
 
 </body>
 
