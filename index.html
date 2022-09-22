@@ -2284,64 +2284,6 @@
             margin-top: 10px
         }
 
-        @media print {
-
-            body,
-            html {
-                background-color: #fff
-            }
-
-            .pdf-container {
-                margin-left: 5mm;
-                margin-right: 5mm;
-                width: auto
-            }
-
-            .page-title {
-                margin-bottom: 0
-            }
-
-            .pdf-break,
-            .pdf-break-device-audit {
-                padding-top: 7mm;
-                page-break-inside: avoid
-            }
-
-            .pdf-break-device-audit {
-                page-break-after: always
-            }
-        }
-
-        @media print {
-            body {
-                color-adjust: exact;
-                -webkit-print-color-adjust: exact
-            }
-        }
-
-        @page {
-            size: 210mm 296mm;
-            margin: 0
-        }
-
-        .printable-page {
-            position: relative
-        }
-
-        .printable-page-A4 {
-            page-break-after: always;
-            width: 210mm;
-            height: 296mm
-        }
-
-        @media screen {
-            .printable-page-A4 {
-                width: 95vw !important;
-                max-width: 210mm;
-                border-bottom: 2px dashed #ccc
-            }
-        }
-
     </style>
 
 
