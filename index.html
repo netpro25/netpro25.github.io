@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title></title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
         /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -2328,7 +2328,8 @@
             width: 210mm
         }
 
-        .table-condensed, .agent-backup-row-container {
+        .table-condensed,
+        .agent-backup-row-container {
             font-size: 8px;
         }
     </style>
@@ -2455,7 +2456,8 @@
                                                 <h1 class="title module-header">Overview</h1>
                                                 <div class="progress-label">Local Storage</div>
                                                 <div class="progress">
-                                                    <div class="progress-bar text-nowrap" style="width: {{localStoragePercent}};">
+                                                    <div class="progress-bar text-nowrap"
+                                                        style="width: {{localStoragePercent}};">
                                                         <strong>{{localStoragePercent}}</strong>
                                                     </div>
                                                 </div>
@@ -2526,6 +2528,41 @@
                                     <hr class="module-separator">
                                 </td>
                             </tr>
+
+                            <tr class="device-module">
+                                <td>
+                                    <section
+                                        class="client-report-recent-restores printable-page printable-page-A4-width">
+                                        <div class="templated-module-container">
+                                            <h1 class="module-header">Recent backups</h1>
+                                            <table
+                                                class="table table-condensed recent-restores-table hero-report-striped-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>System</th>
+                                                        <th>Created</th>
+                                                        <th>Result</th>
+                                                        <th>Local Verifcation</th>
+                                                        <th>Screenshot Verifcation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Start Repeat -->
+                                                    {{recentBackups}}
+                                                    <!-- End Repeat -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <hr class="module-separator">
+                                </td>
+                            </tr>
+
                             <tr class="device-module">
                                 <td>
 
