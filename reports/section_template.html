@@ -1,0 +1,171 @@
+            <tr>
+                <td>
+
+                    <table class="device-wrapper-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr class="device-header">
+                                <td>
+
+                                    <section class="device-header printable-page printable-page-A4-width">
+                                        <div class="device-header-container">
+                                            <div class="device-name">
+                                                <span>{{deviceName}}</span>
+                                            </div>
+                                            <div class="device-counter">
+                                                <span>
+                                                    {{deviceCounter}}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </td>
+                            </tr>
+
+                            <tr class="device-module">
+                                <td>
+
+
+                                    <section
+                                        class="client-report-device-overview printable-page printable-page-A4-width">
+                                        <div class="templated-module-container">
+                                            <div class="header">
+                                                <h1 class="title module-header">Overview</h1>
+                                                <div class="progress-label">Local Storage</div>
+                                                <div class="progress">
+                                                    <div class="progress-bar text-nowrap"
+                                                        style="width: {{localStoragePercent}};">
+                                                        <strong>{{localStoragePercent}}</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <table class="table table-condensed device-overview-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Total Protected Data</th>
+                                                        <td>{{totalProtected}}</td>
+                                                        <th>Service Plan</th>
+                                                        <td>{{servicePlan}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Last Checkin</th>
+                                                        <td>{{lastCheckin}}</td> <!-- localize the date -->
+                                                        <th>Warranty Expires</th>
+                                                        <td>{{warrantyExpires}}</td> <!-- localize the date -->
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Device uptime</th>
+                                                        <td>{{uptime}}</td>
+                                                        <th>Model</th>
+                                                        <td>{{modelNumber}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Registration date</th>
+                                                        <td>{{registrationDate}}</td>
+                                                        <th>Serial Number</th>
+                                                        <td>{{serialNumber}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <th>Local IP</th>
+                                                        <td>{{localIp}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <hr class="module-separator">
+                                </td>
+                            </tr>
+                            <tr class="device-module">
+                                <td>
+                                    <section class="recent-screenshots printable-page printable-page-A4-width">
+                                        <div class="templated-module-container">
+                                            <h1 class="module-header">Most Recent Screenshots</h1>
+                                            <div class="screenshots-grid">
+                                                {{recentScreenshots}}
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <hr class="module-separator">
+                                </td>
+                            </tr>
+
+                            <tr class="device-module">
+                                <td>
+                                    <section
+                                        class="client-report-recent-restores printable-page printable-page-A4-width">
+                                        <div class="templated-module-container">
+                                            <h1 class="module-header">Recent backups</h1>
+                                            <table
+                                                class="table table-condensed recent-restores-table hero-report-striped-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>System</th>
+                                                        <th>Created</th>
+                                                        <th>Result</th>
+                                                        <th>Local Verifcation</th>
+                                                        <th>Screenshot Verifcation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {{recentBackups}}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <hr class="module-separator">
+                                </td>
+                            </tr>
+
+                            <tr class="device-module">
+                                <td>
+
+                                    <section
+                                        class="client-report-protected-system-details printable-page printable-page-A4-width">
+                                        <div class="templated-module-container">
+                                            <h1 class="module-header">Protected System Details</h1>
+                                            {{systemDetails}}
+                                        </div>
+                                    </section>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
